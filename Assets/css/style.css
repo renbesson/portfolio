@@ -9,10 +9,20 @@
     "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-/* Changes the body background */
+/* Changes the body background and defines the default font-family */
 body {
   background-color: var(--mainBg);
   font-family: var(--fontTrebuchet);
+}
+
+/* Centers the items vertically */
+.center-vertically {
+  align-self: center;
+}
+
+/* Adds a bottom margin */
+.bottom-margin {
+  margin-bottom: 50px;
 }
 
 /* Formats the header */
@@ -24,7 +34,7 @@ body {
   padding: 10px 0 15px 0;
 }
 
-/* Formats the header links to be positioned inline */
+/* Formats the header title */
 .nav-bar h1 {
   font-size: 48px;
   padding: 10px 10px 10px 50px;
@@ -32,12 +42,12 @@ body {
   background-color: var(--oceanBlue);
 }
 
-/* Adds padding and margin and formats the nav links  */
+/* Adds right margin */
 nav {
-  align-self: center;
   margin-right: 75px;
 }
 
+/* Formats the links inside the nav tag */
 nav a {
   color: var(--oceanBlue);
   font-size: 22px;
@@ -46,6 +56,7 @@ nav a {
   text-underline-offset: 8px;
 }
 
+/* Stretches the underline of the links on both sides */
 nav a::before {
   content: ".";
   color: transparent;
@@ -56,7 +67,7 @@ nav a::after {
   color: transparent;
 }
 
-/* Formats the hero on the main image */
+/* Formats the hero of the main image */
 .hero {
   position: relative;
   height: 200px;
@@ -67,6 +78,7 @@ nav a::after {
   background-position: center;
 }
 
+/* Formats the hero title */
 .hero-text {
   position: absolute;
   right: 75px;
@@ -77,6 +89,7 @@ nav a::after {
   padding: 10px;
 }
 
+/* Formats the hero image */
 .hero-img {
   position: absolute;
   height: 100%;
@@ -86,17 +99,20 @@ nav a::after {
   padding: 5px;
 }
 
-/* ############################################################################ */
+/* ##### CONTENT CSS ##### */
 
+/* Defines a max width for the content and centers vertically */
 main {
   max-width: 1200px;
   margin: 0 auto;
 }
 
+/* Container for the row/column system */
 .flex-container {
   margin: 0 auto;
 }
 
+/* Defines the rows */
 .flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -105,56 +121,43 @@ main {
   margin-bottom: 40px;
 }
 
-.flex-col-0 {
-  flex: 0;
-}
-
+/* Defines the columns with flex 1 */
 .flex-col-1 {
   flex: 1 0;
 }
 
-.flex-col-2 {
-  flex: 2;
-}
-
-.flex-col-3 {
-  flex: 3;
-}
-
+/* Defines the columns with flex 4 */
 .flex-col-4 {
   flex: 4;
 }
 
-.flex-col-5 {
-  flex: 5;
-}
-
-.flex-full {
+/* Defines the columns with full width */
+.flex-col-full {
   flex-basis: 100%;
 }
 
-.bottom-margin {
-  margin-bottom: 50px;
-}
-
+/* Creates a vertical line between the titles and contents */
 .right-border {
   border-right: 4px solid var(--lightGray);
   padding-right: 15px;
   margin-right: 30px;
 }
 
+/* Formats the content title */
 .content-title {
   font-size: 56px;
   color: var(--lightGray);
   text-align: end;
 }
 
+/* Formats the content text */
 .content-text {
   font-size: 16px;
   color: var(--lightGray);
   line-height: 1.5;
 }
 
+/* Formats the card boilerplate */
 .card {
   position: relative;
   border: 5px solid var(--oceanBlue);
@@ -162,6 +165,7 @@ main {
   color: var(--darkGray);
 }
 
+/* Formats the background image of the cards */
 .card::before {
   position: absolute;
   content: "";
@@ -175,66 +179,7 @@ main {
   transition: opacity 0.5s ease-in-out;
 }
 
-.card-surf {
-  height: 400px;
-}
-
-.card-surf::before {
-  background-image: url("../images/project1.png");
-}
-
-.card-surf:hover::before {
-  opacity: 1;
-}
-
-.card-led {
-  height: 150px;
-}
-
-.card-led::before {
-  background-image: url("../images/project2.png");
-}
-
-.card-led:hover::before {
-  opacity: 1;
-}
-
-.card-calc {
-  height: 150px;
-}
-
-.card-calc::before {
-  background-image: url("../images/tbd.webp");
-}
-
-.card-calc:hover::before {
-  opacity: 1;
-}
-
-.card-pastel {
-  height: 150px;
-}
-
-.card-pastel::before {
-  background-image: url("../images/tbd.webp");
-}
-
-.card-pastel:hover::before {
-  opacity: 1;
-}
-
-.card-run {
-  height: 150px;
-}
-
-.card-run::before {
-  background-image: url("../images/tbd.webp");
-}
-
-.card-run:hover::before {
-  opacity: 1;
-}
-
+/* Formats the card info */
 .card header {
   position: absolute;
   left: 0;
@@ -243,24 +188,85 @@ main {
   background-color: var(--oceanBlue);
 }
 
+/* Formats the card title */
 .card header h3 {
   font-size: 28px;
   margin-bottom: 10px;
 }
 
+/* Formats the card text */
 .card header p {
   font-size: 16px;
   font-weight: lighter;
 }
 
+/* Formats the cards induavidually */
+.card-1 {
+  height: 400px;
+}
+
+.card-1::before {
+  background-image: url("../images/project1.png");
+}
+
+.card-1:hover::before {
+  opacity: 1;
+}
+
+.card-2 {
+  height: 150px;
+}
+
+.card-2::before {
+  background-image: url("../images/project2.png");
+}
+
+.card-2:hover::before {
+  opacity: 1;
+}
+
+.card-3 {
+  height: 150px;
+}
+
+.card-3::before {
+  background-image: url("../images/tbd.webp");
+}
+
+.card-3:hover::before {
+  opacity: 1;
+}
+
+.card-4 {
+  height: 150px;
+}
+
+.card-4::before {
+  background-image: url("../images/tbd.webp");
+}
+
+.card-4:hover::before {
+  opacity: 1;
+}
+
+.card-5 {
+  height: 150px;
+}
+
+.card-5::before {
+  background-image: url("../images/tbd.webp");
+}
+
+.card-5:hover::before {
+  opacity: 1;
+}
+
+/* Formats the Contact Me section */
 .footer {
   justify-content: space-between;
 }
 
+/* Defines the color of the Contact Me section */
 .footer a {
   color: var(--darkGray);
-}
-
-.center-vertically {
-  align-self: center;
 }
