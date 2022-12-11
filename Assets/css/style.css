@@ -206,7 +206,7 @@ main {
 }
 
 .card-1::before {
-  background-image: url("../images/project1.png");
+  background-image: url("../images/investment-solutions.png");
 }
 
 .card-1:hover::before {
@@ -218,7 +218,7 @@ main {
 }
 
 .card-2::before {
-  background-image: url("../images/project2.png");
+  background-image: url("../images/project1.png");
 }
 
 .card-2:hover::before {
@@ -230,7 +230,7 @@ main {
 }
 
 .card-3::before {
-  background-image: url("../images/tbd.webp");
+  background-image: url("../images/project2.png");
 }
 
 .card-3:hover::before {
