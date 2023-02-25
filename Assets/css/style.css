@@ -3,10 +3,10 @@
   --lightGray: rgb(59, 78, 107);
   --oceanBlue: rgb(135, 197, 198);
   --mainBg: rgb(234, 234, 245);
-  --fontTrebuchet: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  --fontHelvetica: Helvetica, "Trebuchet MS", "Lucida Sans Unicode",
-    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  --fontTrebuchet: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial,
+    sans-serif;
+  --fontHelvetica: Helvetica, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+    Arial, sans-serif;
 }
 
 /* Changes the body background and defines the default font-family */
@@ -58,12 +58,12 @@ nav a {
 
 /* Stretches the underline of the links on both sides */
 nav a::before {
-  content: ".";
+  content: '.';
   color: transparent;
 }
 
 nav a::after {
-  content: ".";
+  content: '.';
   color: transparent;
 }
 
@@ -73,7 +73,7 @@ nav a::after {
   height: 200px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../images/hero.jpeg");
+  background-image: url('../images/hero.jpeg');
   background-size: cover;
   background-position: center;
 }
@@ -168,7 +168,7 @@ main {
 /* Formats the background image of the cards */
 .card::before {
   position: absolute;
-  content: "";
+  content: '';
   background-size: cover;
   background-position: center;
   top: 0;
@@ -200,65 +200,38 @@ main {
   font-weight: lighter;
 }
 
-/* Formats the cards induavidually */
-.card-1 {
+.card-full {
   height: 400px;
 }
 
-.card-1::before {
-  background-image: url("../images/investment-solutions.png");
-}
-
-.card-1:hover::before {
-  opacity: 1;
-}
-
-.card-2 {
+.card-half {
   height: 150px;
 }
 
-.card-2::before {
-  background-image: url("../images/project1.png");
-}
-
-.card-2:hover::before {
+.card-non_opaque:hover::before {
   opacity: 1;
 }
 
-.card-3 {
-  height: 150px;
+/* Formats the cards induavidually */
+
+.card-too_much_food::before {
+  background-image: url('../images/too_much_food.png');
 }
 
-.card-3::before {
-  background-image: url("../images/project2.png");
+.card-investment_solutions::before {
+  background-image: url('../images/investment_solutions.png');
 }
 
-.card-3:hover::before {
-  opacity: 1;
+.card-nextjs_mui_firebase::before {
+  background-image: url('../images/nextjs_mui_firebase.png');
 }
 
-.card-4 {
-  height: 150px;
+.card-nuxt_daisyui_firebase::before {
+  background-image: url('../images/nuxt_daisyui_firebase.png');
 }
 
-.card-4::before {
-  background-image: url("../images/tbd.webp");
-}
-
-.card-4:hover::before {
-  opacity: 1;
-}
-
-.card-5 {
-  height: 150px;
-}
-
-.card-5::before {
-  background-image: url("../images/tbd.webp");
-}
-
-.card-5:hover::before {
-  opacity: 1;
+.card-tbd::before {
+  background-image: url('../images/tbd.webp');
 }
 
 /* Formats the Contact Me section */
