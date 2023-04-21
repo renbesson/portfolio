@@ -214,6 +214,10 @@ main {
 
 /* Formats the cards induavidually */
 
+.card-socialpet::before {
+  background-image: url('../images/socialpet.png');
+}
+
 .card-too_much_food::before {
   background-image: url('../images/too_much_food.png');
 }
