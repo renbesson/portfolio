@@ -214,6 +214,10 @@ main {
 
 /* Formats the cards induavidually */
 
+.card-weighit::before {
+  background-image: url('../images/weighit.png');
+}
+
 .card-socialpet::before {
   background-image: url('../images/socialpet.png');
 }
