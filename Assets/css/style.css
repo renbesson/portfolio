@@ -214,6 +214,10 @@ main {
 
 /* Formats the cards induavidually */
 
+.card-rich_monkey::before {
+  background-image: url('../images/rich_monkey.jpeg');
+}
+
 .card-weighit::before {
   background-image: url('../images/weighit.png');
 }
